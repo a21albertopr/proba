@@ -16,12 +16,7 @@ public class ContadorAscendente {
         this.valorActual = valorActual;
     }
 
-    @Override
-    public String toString() {
-        return "ContadorAscendente{" + '}';
- 
-        
-    public int getValorActual() {
+     public int getValorActual() {
         return valorActual;
     }
 
@@ -30,6 +25,37 @@ public class ContadorAscendente {
     }
 
     
+     @Override
+    public String toString() {
+        return "ContadorAscendente{" + '}';
+ 
+    
+    
+    @Override
+    public String toString() {
+        return "ContadorAscendente{" + '}';
+    public int incrementar(){
+        if (this.valorActual<1000){
+            this.valorActual++;
+        }else{
+            this.valorActual=1000;
+        }
+        return this.valorActual;
+    }
+        
+        
+    public void reiniciar(){
+    this.valorActual=0;
+}
+    
+    
+        public int cambiarValor(int modificador){
+        int suma=this.valorActual+modificador;
+        if (suma<1000){
+            this.valorActual=suma;
+        }
+        return this.valorActual;
+    }
     
     
     
